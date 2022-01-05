@@ -1,5 +1,5 @@
-import pickle
 
+import pickle
 import mysql.connector
 
 class Database():
@@ -57,7 +57,8 @@ class Database():
         self.mycursor.execute("DROP TABLE Face")
 
     def Create(self):
-        self.mycursor.execute("CREATE TABLE Face (name VARCHAR(50),image BLOB,facecode BLOB,personID int PRIMARY KEY AUTO_INCREMENT)")
+        self.mycursor.execute("CREATE TABLE face (name VARCHAR(50),image BLOB,facecode BLOB,personID int PRIMARY KEY "
+                              "AUTO_INCREMENT, time VARCHAR(50))")
 
     def Clear(self):
         self.mycursor.execute("UPDATE Face SET name = NULL")
@@ -73,7 +74,8 @@ class Database():
 
 
 
-p=Database()
+#p=Database()
 #p.Clear()
-p.DeleteAll()
+#p.DeleteAll()
+#p.Create()
 #p.Create()
