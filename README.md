@@ -70,7 +70,7 @@ no return value
 Function 5: (no parameter) clear time data
 Main
 No return value
-*** Translated with www.DeepL.com/Translator (free version) ***
+
 
 
 
